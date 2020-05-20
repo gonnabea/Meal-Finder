@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    width:100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #F4E4CD;
+    background-image: url('images/배경사진.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.title{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+
+.search-area{
+    display: flex;
+}
+
+.search-meal{
+    
+}
+
+.meal-input{
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    box-shadow: 0 0 10px black;
+}
+
+.search-sub{
+    position: relative;
+    height: 42px;
+    width: 50px;
+    top: 1px;
+    right: 10px;
+    border:none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    box-shadow: 0 0 10px black;
+    font-size: 20px;
+}
+
+.random-btn{
+    position: relative;
+    
+    height: 42px;
+    width: 50px;
+    
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px black;
+    font-size: 20px;
+}
