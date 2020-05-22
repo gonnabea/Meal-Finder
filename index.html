@@ -11,13 +11,15 @@
         <h1 class="title">음식정보 찾기</h1>
         <div class="search-area" id="searchArea">
             <form action="" class="search-meal" id="searchMeal">
-                <input type="text" class="meal-input" placeholder="음식명이나 키워드를 입력하세요." id="mealInput">
+                <input type="text" class="meal-input" id="mealInput" placeholder="음식명이나 키워드를 입력하세요" required="true" id="mealInput">
                 <input type="submit" class="search-sub" id="searchSub" value="🔎">
             </form>
             <button class="random-btn" id="randomBtn">❓</button>
         </div>
+        <h2 class="keywword" id="keyword"></h2>
 
     </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

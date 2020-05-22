@@ -20,6 +20,8 @@ body{
 .title{
     background-color: rgba(0,0,0,0.6);
     color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
 }
 
 .search-area{
@@ -53,11 +55,12 @@ body{
     outline: none;
     box-shadow: 0 0 10px black;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .random-btn{
     position: relative;
-    
+    top: 1px;
     height: 42px;
     width: 50px;
     
@@ -66,4 +69,5 @@ body{
     outline: none;
     box-shadow: 0 0 10px black;
     font-size: 20px;
+    cursor: pointer;
 }
