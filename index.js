@@ -23,20 +23,20 @@ init();
 
 */
 
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
-const url =
-  "http://211.237.50.150:7080/openapi/5bc6c1114d787038aaded73920b3ac1242a0ef147f8d69b4f872188180544c76/json/Grid_20150827000000000226_1/1/600";
 const searchMeal = document.getElementById("searchMeal");
 const mealInput = document.getElementById("mealInput"),
-  keyword = document.getElementById("keyword");
-const api = {
-  temp: () => {
-    return fetch(proxyurl + url).then((res) => res.json());
-  },
-};
+keyword = document.getElementById("keyword");
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 const handleSubmit = async (e) => {
   e.preventDefault();
   console.log(mealInput.value);
+  const api = {
+    temp: () => {
+      const url =
+        `http://211.237.50.150:7080/openapi/5bc6c1114d787038aaded73920b3ac1242a0ef147f8d69b4f872188180544c76/json/Grid_20150827000000000226_1/1/600?RECIPE_NM_KO=${mealInput.value}`;
+      return fetch(proxyurl + url).then((res) => res.json());
+    },
+  };
   keyword.innerHTML = `"${mealInput.value}" 검색결과`;
   const data = await api.temp();
   console.log(data);
